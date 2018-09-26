@@ -1,0 +1,9 @@
+# rybyex4
+https://www.facebook.com/#
+def wrap_text(txt, col = 80)
+	txt.gsub(/(.{1,#{col}})( +|$\n?)|(.{1,#{col}})/, "\\1\\3\n")
+end
+
+paragraph = "The bone-chilling scream split the warm summer night in two, the first half being before the scream when it was fairly balmy and calm and pleasant, the second half still balmy and quite pleasant for those who hadn't heard the scream at all, but not calm or balmy or even very nice for those who did hear the scream, discounting the little period of time during the actual scream itself when your ears might have been hearing it but your brain wasn't reacting yet to let you know. -- Winning sentence, 1986 Bulwer-Lytton bad fiction contest."
+
+puts wrap_text paragraph, 50
